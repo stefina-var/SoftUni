@@ -6,19 +6,19 @@ JavaScript is language of the web. Currently, we are usuing ECMAScript 6, the se
 Js is used widely, because of three reasons - it is ease to use, it is the standart browser language and it fully integrations with HTML and CSS.
 
 JavaScript is:
-    - high-level language - It allows complex features on web pages.
-    - both client and service-side - It can be executed both in the browser and on the server. Actually, on every device that has and Js engine.
-    - dynamically typed language - variables can change types.
-    - interpretative language -
+1.high-level language - It allows complex features on web pages.
+2.both client and service-side - It can be executed both in the browser and on the server. Actually, on every device that has and Js engine.
+3.dynamically typed language - variables can change types.
+4.interpretative language -
 
 ## What is JavaScript engine?
 
 Every browser have an JS engine to execute the source code of the web pages.The engine reads the script, compiles it into a machine code and then runs it.
 
 Diffrent browsers have their own engine, but they overall do the same.
-    - V8 - Chrome, Edge
-    - SpiderMonkey - FireFox
-    - SqurrelFish - Safari
+1.V8 - Chrome, Edge
+2.SpiderMonkey - FireFox
+3.SqurrelFish - Safari
 
 ## What is Node.js?
 
