@@ -39,11 +39,11 @@ With those we can apply an operator to a variable and store the new result in th
 
 Sometimes we need to perform an action based on some condition. 
 * We can do this with if statement. When the condition returns true, a statement is executed.<br>
-  ```
-if(condition){<br>
->action<br>
-}<br>
-    ```
+```
+if(condition){
+    action
+}
+```
 * We can add an else-clause which will execute if the if-statement returns false.<br>
 >>if(condition){<br>
 >>action 1<br>
@@ -76,5 +76,7 @@ If no case is matched then the default code is executed (if it exists).<br>
 >>case 'value2': action 2<br>
 >[break]<br>
 >>default: action 3<br>
+>[break]<br>
+>}<br>
 >[break]<br>
 >}<br>
