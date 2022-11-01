@@ -6,13 +6,14 @@ Operators process and add logic to the data.
 
 * Basic operators - "+", "-" , "/", "*", "**", "%"
 * "=" - assign value to a variable
-* increment/decrement operators<br>
->"++" increment by one - equal to "+= 1"<br>
->"--" decrement by one - equal to "-= 1"<br>
->They can be before the variable or after let x = 0; x++,++x<br>
+* increment/decrement operators <br>
+They can be before the variable or after let x = 0; x++,++x<br>
+>"++" increment by one - equal to "+ 1"<br>
+>"--" decrement by one - equal to "- 1"<br>
+
 * “modify-and-assign” operators<br>
+With those we can apply an operator to a variable and store the new result in that same variable.
 >"+=","-=","*=","/=" <br>
->With those we can apply an operator to a variable and store the new result in that same variable.
 * Bitwise operators
 >AND ( & )<br>
 >OR ( | )<br>
@@ -22,19 +23,19 @@ Operators process and add logic to the data.
 >RIGHT SHIFT ( >> )<br>
 >ZERO-FILL RIGHT SHIFT ( >>> )<br>
 
-
 ## How do we compare variables? Strict (===) vs non-strict comparison (==). Provide examples.
 * In Js we have the comparison operators from maths.<br>
 ">", "<" , "<=", ">="
 * The most interesting however are the "===" and "==">
->"===" compares value and type <br>
->"==" compares only the value<br>
->>let str = "";<br>
->>let boo = false;<br>
->>(str === boo) => false - They both equal false but the type is different.<br>
+"===" compares value and type <br>
+"==" compares only the value<br>
+>let str = "";<br>
+>let boo = false;<br>
+>(str === boo) => false - They both equal false but the type is different.<br>
 * && - and - 
 * || - or - 
 * ! - not equal - 
+  
 ## What are if-else statements? Provide examples.
 
 Sometimes we need to perform an action based on some condition. 
