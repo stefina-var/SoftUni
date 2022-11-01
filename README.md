@@ -28,9 +28,11 @@ With those we can apply an operator to a variable and store the new result in th
 * The most interesting however are the "===" and "==">
 "===" compares value and type <br>
 "==" compares only the value<br>
->let str = "";<br>
->let boo = false;<br>
->(str === boo) => false - They both equal false but the type is different.<br>
+```
+let str = "";
+let boo = false;
+(str === boo) => //false - They both equal false but the type is different.
+```
 * && -The logical AND operator - When we have a set of boolean operands it will return true if and only all the operands are true. Otherwise it will be false.
 * || -The logical OR operator- For a set of operands it will returns true if one or more of its operands are true.
 * ! - The logical NOT  operator.It takes truth to falsity and vice versa. 
