@@ -1,79 +1,45 @@
-# Operators and Control Structures
+# Arrays
 
-## What are operators? How are they used?
+## What are arrays?
 
-Operators process and add logic to the data.
+Array is an object that stores values in order. Every value has its index. This is a number that refers to the location where the value is stored. When we want to access a value, we can get it with its index. The indexes start from 0.
 
-* Basic operators - "+", "-" , "/", "*", "**", "%"
-* "=" - assign value to a variable
-* increment/decrement operators <br>
->"++" increment by one - equal to "+ 1"<br>
->"--" decrement by one - equal to "- 1"<br>
-* “modify-and-assign” operators - "+=","-=","*=","/="<br>
-*With those we can apply an operator to a variable and store the new result in that same variable.*
-* Bitwise operators
->AND ( & )<br>
->OR ( | )<br>
->XOR ( ^ )<br>
->NOT ( ~ )<br>
->LEFT SHIFT ( << )<br>
->RIGHT SHIFT ( >> )<br>
->ZERO-FILL RIGHT SHIFT ( >>> )<br>
-* && -The logical AND operator - When we have a set of boolean operands it will return true if and only all the operands are true. Otherwise it will be false.
-* || -The logical OR operator- For a set of operands it will returns true if one or more of its operands are true.
-* ! - The logical NOT  operator. It takes truth to falsity and vice versa. 
+## What kind of values can we store in arrays?
 
-## How do we compare variables? Strict (===) vs non-strict comparison (==). Provide examples.
-* In Js we have the comparison operators from maths.<br>
-">", "<" , "<=", ">="
-* The most interesting however are the "===" and "=="><br>
-"===" compares value and type <br>
-"==" compares only the value<br>
+They can store numbers, strings, boolean values, characters, objects, undefined, and so on.
+
+## What ways can we use to iterate over an array?
+We can iterate over an array with loops. Most commonly for loop.<br>
 ```
-let str = "";
-let boo = false;
-(str === boo) => //false - Both equal false, but the type is different.
-```
-
-## What are if-else statements? Provide examples.
-
-Very often when you write code, you want to perform different actions for different decisions.We can use conditional statements to do this.<br>
-In JavaScript we have the following conditional statements:<br>
-* Use *if* to specify a block of code to be executed, if a specified condition is true.<br>
-```
-if(condition){
-    statement
+for (let i = 0; i < array.length; i++) {
+  text += array[i] + "<br>";
 }
 ```
-* We can add an *else*-clause which will execute, if the if-statement returns false.<br>
-Use *else if* to specify a new condition to test, if the first condition is false.<br>
-```
-if(condition){
-    action 1
-}else if{
-    action 2
-}else{
-    action 3
-}
-```
-* The so-called “conditional” or “question mark” operator lets us do that in a shorter and simpler way.<br>
+There are also some methods - map(),forEach()etc.<br>
 
-The operator is represented by a question mark ?. Sometimes it’s called “ternary”, because the operator has three operands. The condition is evaluated and if it’s truthy then value1 is returned, otherwise – value2.<br>
 ```
-let result = condition ? value1 : value2;<br>
+arr.forEach(function(item, index, array) {
+  // ... do something with item
+});
 ```
 
-## What are switch statements? Provide examples.
+## What are array methods? Examples?
 
-A switch statement can replace multiple if checks. It gives a more descriptive way to compare a value with multiple variants.<br>
-If no case is matched then the default code is executed (if it exists).<br>
-```
-switch(x) {
-    case 'value1': action 1
-    [break]
-    case 'value2': action 2
-    [break]
-    default: action 3
-    [break]
-}
-```
+There is a wide variety of methods to help us manipulate the data inside of an array.<br>
+Some of the most common methodsre:<br>
+* array. push()- adds an element at the end of the array
+* array.sort()- sort the array
+
+## Which array methods return a new array?
+* slice(start, end) - The slice() method returns a shallow copy of a portion of an array into a new array object selected from start to end (end not included). The original array will not be modified.
+* concat() - Creates a new array that includes values from other arrays and additional items.
+* map() - It calls the function for each element of the array and returns the array of results.
+* forEach()-Allows to run a function for every element of the array.
+* filter()-returns an array of all matching elements:
+and more...
+
+## Which array methods modify the original array?
+* splice(start, delete out, item1, item2, item) - The splice method changes the contents of an array by removing or replacing existing elements and/or adding new elements in place. It modifies the original array.
+* sort() - sorts the array in place, changing its element order.
+* reverse() - he method arr.reverse reverses the order of elements in arr.
+  and more...
