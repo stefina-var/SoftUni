@@ -45,38 +45,33 @@ if(condition){
 }
 ```
 * We can add an else-clause which will execute if the if-statement returns false.<br>
->>if(condition){<br>
->>action 1<br>
->>}else{<br>
->>action 2<br>
->>}<br>
->>if(condition){<br>
->>action 1<br>
->>}if else{<br>
->>action 2<br>
->>}else{<br>
->>action 3<br>
->>}
-
+```
+if(condition){
+    action 1
+}else if{
+    action 2
+}else{
+    action 3
+}
+```
 * The so-called “conditional” or “question mark” operator lets us do that in a shorter and simpler way.<br>
 
 The operator is represented by a question mark ?. Sometimes it’s called “ternary”, because the operator has three operands. The condition is evaluated and if it’s truthy then value1 is returned, otherwise – value2.<br>
-
->let result = condition ? value1 : value2;<br>
-
+```
+let result = condition ? value1 : value2;<br>
+```
 
 ## What are switch statements? Provide examples.
 
 A switch statement can replace multiple if checks. It gives a more descriptive way to compare a value with multiple variants.<br>
 If no case is matched then the default code is executed (if it exists).<br>
-
->switch(x) {<br>
->>case 'value1': action 1<br>
->[break]<br>
->>case 'value2': action 2<br>
->[break]<br>
->>default: action 3<br>
->[break]<br>
->}<br>
->[break]<br>
->}<br>
+```
+switch(x) {
+    case 'value1': action 1
+    [break]
+    case 'value2': action 2
+    [break]
+    default: action 3
+    [break]
+}
+```
