@@ -8,12 +8,12 @@ Operators process and add logic to the data.
 * "=" - assign value to a variable
 * increment/decrement operators <br>
 They can be before the variable or after let x = 0; x++,++x<br>
->"++" increment by one - equal to "+ 1"<br>
->"--" decrement by one - equal to "- 1"<br>
+>>>>"++" increment by one - equal to "+ 1"<br>
+>>>>"--" decrement by one - equal to "- 1"<br>
 
 * “modify-and-assign” operators<br>
 With those we can apply an operator to a variable and store the new result in that same variable.
->"+=","-=","*=","/=" <br>
+>>>>"+=","-=","*=","/=" <br>
 * Bitwise operators
 >AND ( & )<br>
 >OR ( | )<br>
