@@ -1,44 +1,34 @@
-# Variables and Data Types
+#  Loops
 
-## What are variables?
+## What are loops and why are they used?
 
-In programming languages information is stored in variables. They represent places in the computer's memory.
-In Js they can be defined with keywords let/const/var.<br>
+Loops are a way to repeat the same code multiple times.
 
+## What are the different types of loops? Provide examples.
 
-## What data types are there in JavaScript? Provide examples for each type
-There are 7 primitive types of variables. 
-
-* string - It stores textual data. It is enclosed within single quotes, double quotes or backticks. 
-  Every string has a length and we can access every letter by it's index.
+* for loop - 
 ```
-let name = "Stefina";
-let name = 'Stefina';
-let name = `Stefina`;
-
+for ([initialExpression]; [conditionExpression]; [incrementExpression]){
+   block of code to be executed
+} 
+initialExpression - the start
+conditionExpression - condition for the end
+incrementExpression - update the initialExpression
+```
+Variations of for are for...of used for arrays and for...in used for objects.
+* while - 
+A while statement executes its statements as long as a specified condition evaluates to true.
+```
+while (condition){
+    block of code to be executed
+}
 ``` 
-* number - In Js we have only one type for numbers for both integers and floating numbers.
+* do...while - 
+The do...while statement repeats until a specified condition evaluates to false.
 ```
-let age = 5;
+do{
+    block of code to be executed
+}
+while (condition);
 ``` 
-* boolean - Stores a variable that is only true or false.
-* undefined - It's a variable that is declared, but not initialized. 
-```
-let name;
-typeof name //-undefined Here we have a declaration of a variable, but we haven't set it to anything.
-```
-* null - It represents a nonexisting/invalid object value.
-```
-foo is known to exist now but it has no type or value:
-const foo = null;
-foo; //null
-```
-* symbol - Symbol is a primitive that's guaranteed to be unique. Symbols are often used to add unique property keys to an object that won't collide with keys any other code might add to the object, and which are hidden from any mechanisms other code will typically use to access the object.
-```
-const sym = Symbol('foo');
-``` 
-* BigInt - BigInt is a numeric data type that can represent integers in the arbitrary precision format.
-
-Variables can be classified as falsy or thuthy.<br>
-* falsy - 0,-0,0n,undefined, null, Nan, false,''.
-* truthy - string, number, array, object, true.
+The main difference is that in this one the statement is executed at least once!
