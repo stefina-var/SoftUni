@@ -1,45 +1,23 @@
-# Arrays
+# Variables and Data Types
 
-## What are arrays?
+## What are variables?
 
-Array is an object that stores values in order. Every value has its index. This is a number that refers to the location where the value is stored. When we want to access a value, we can get it with its index. The indexes start from 0.
+In programming languages information is stored in variables. They represent places in the computer's memory.
+In Js they can be defined with keywords let/const/var. (Let is used when the variable type can be changed. Const in when it will remain the same. they both are only in the scope there are defined in. Var in global, but is not recommended to be used.) 
+There are 7 primitive types of variables. 
 
-## What kind of values can we store in arrays?
+## What data types are there in JavaScript? Provide examples for each type
 
-They can store numbers, strings, boolean values, characters, objects, undefined, and so on.
+* string - It stores textual data. It is enclosed within single quotes, double quotes or backticks. 
+  Every string has a length and we can access every letter by it's index.
+* number - In Js we have only one type for numbers for both integers and floating numbers.
+* boolean - Holds a variable that is only true or false 
+* undefined - It's a variable that is declared, but not initialized. 
+  *let name; - Here we have a declaration of a variable, but we haven't set it to anything.*
+* null - It represents a nonexisting/invalid object value.
+* symbol - 
+* BigInt - BigInt is a numeric data type that can represent integers in the arbitrary precision format.
 
-## What ways can we use to iterate over an array?
-We can iterate over an array with loops. Most commonly for loop.<br>
-```
-for (let i = 0; i < array.length; i++) {
-  text += array[i] + "<br>";
-}
-```
-There are also some methods - map(),forEach()etc.<br>
-
-```
-arr.forEach(function(item, index, array) {
-  // ... do something with item
-});
-```
-
-## What are array methods? Examples?
-
-There is a wide variety of methods to help us manipulate the data inside of an array.<br>
-Some of the most common methodsre:<br>
-* array. push()- adds an element at the end of the array
-* array.sort()- sort the array
-
-## Which array methods return a new array?
-* slice(start, end) - The slice() method returns a shallow copy of a portion of an array into a new array object selected from start to end (end not included). The original array will not be modified.
-* concat() - Creates a new array that includes values from other arrays and additional items.
-* map() - It calls the function for each element of the array and returns the array of results.
-* forEach()-Allows to run a function for every element of the array.
-* filter()-returns an array of all matching elements:
-and more...
-
-## Which array methods modify the original array?
-* splice(start, delete out, item1, item2, item) - The splice method changes the contents of an array by removing or replacing existing elements and/or adding new elements in place. It modifies the original array.
-* sort() - sorts the array in place, changing its element order.
-* reverse() - he method arr.reverse reverses the order of elements in arr.
-  and more...
+Variables can be classified as falsy or thuthy. 
+falsy - 0,-0,+0,undefined, null, Nan, false,''
+truthy - string, number, array, object, true 
