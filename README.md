@@ -2,14 +2,14 @@
 
 ## What are variables?
 
-In programming languages information is stored in variables. In JavaScript, a variable may store two type of values, Primitive values or Reference values. <br>
+In programming languages information is stored in variables. In JavaScript, a variable may store two types of values, Primitive values or Reference values. <br>
 
 
 ## What data types are there in JavaScript? Provide examples for each type
 
 ### Primitive value
 
-When we access a primitive value, we manipulate the actual value stored in that variable. And when we assign a value from one variable to another, it creates a new variable in the memeory.JavaScript stores the primitive value in the call stack (Execution context). 
+When we access a primitive value, we manipulate the actual value stored in that variable. And when we assign a value from one variable to another, it creates a new variable in the memory. JavaScript stores the primitive value in the call stack (Execution context). 
 ```
 let a = "hello";
 let b = a; 
@@ -17,14 +17,14 @@ cosnole.log(b) //"hello"
 ```
 There are 7 primitive types of variables. 
 * string - It stores textual data. It is enclosed within single quotes, double quotes or backticks. 
-  Every string has a length and we can access every letter by it's index.
+  Every string has a length and we can access every letter by its index.
 ```
 let name = "Stefina";
 let name = 'Stefina';
 let name = `Stefina`;
 
 ``` 
-* number - In Js we have only one type for numbers for both integers and floating numbers.
+* number - In Js we have only one type of numbers for both integers and floating numbers.
 ```
 let age = 5;
 ``` 
@@ -32,7 +32,7 @@ let age = 5;
 * undefined - It's a variable that is declared, but not initialized. 
 ```
 let name;
-typeof name //-undefined Here we have a declaration of a variable, but we haven't set it to anything.
+typeof name //-undefined Here we have a variable declaration, but we haven't set it to anything.
 ```
 * null - It represents a nonexisting/invalid object value.
 ```
@@ -49,14 +49,15 @@ const sym = Symbol('foo');
 Variables can be classified as falsy or thuthy.<br>
 * falsy - 0,-0,0n,undefined, null, Nan, false,''.
 * truthy - string, number, array, object, true.
-* 
+ 
 ### Reference Value
 
-Variables that are assigned a non-primitive value are given a reference to that value. That reference points to the object’s location in memory. The variables don’t actually contain the value.
+Variables that are assigned a non-primitive value are given a reference to that value. That reference points to the object’s location in memory. The variables don’t contain the value. JavaScript stores the reference typed value in the Heap (Execution context). 
 ```
 var arr = [];
 arr.push(1);
-\\When we use arr to do something, such as pushing a value, the Javascript engine goes to the location of arr in memory and works with the information stored there.
+//When we use arr to do something, such as pushing a value,
+the Javascript engine goes to the location of arr in memory and works with the information stored there.
 ```
 
 When a reference type value, an object, is copied to another variable using =, the address of that value is what’s actually copied over.
@@ -64,9 +65,9 @@ When a reference type value, an object, is copied to another variable using =, t
 var reference = [1];
 var refCopy = reference; 
 refCopy.push(2);
-console.log(reference) \\[1, 2]
-console.log(refCopy) \\ [1, 2]
-\\Each variable now contains a reference to the same array. That means that if we alter reference, refCopy will also;
+console.log(reference) //[1, 2]
+console.log(refCopy) // [1, 2]
+//Each variable now contains a reference to the same array. That means that if we alter the reference, refCopy will also;
 ```
 
 JavaScript provides three types of Reference values that include *Array*, *Object*, and *Function*. 
