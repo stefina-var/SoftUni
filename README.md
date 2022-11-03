@@ -1,41 +1,72 @@
-# Functions
+# Variables and Data Types
 
-## What are functions and why are they used?
-    
-Functions are the main “building blocks” of the program. They allow the code to be called many times without repetition.
-They usually take parameters and return an output. 
-```
-    function showMessage(param) {
-        return param*2;
-}
-```
-Some specifics of functions:
-* We call the function with showMessage() as many times as we need and with different parameters.
-* There may be many occurrences of return in a single function. 
-* A variable declared inside a function is only visible inside that function. Whereas, a function can access an external variable and modify it. 
-* Functions are actions. So their name is usually a verb. It should describe what the function does.
-* We can place functions inside of functions. It's called nested functions.
+## What are variables?
+
+In programming languages information is stored in variables. In JavaScript, a variable may store two type of values, Primitive values or Reference values. <br>
 
 
-## What are the different types of functions? Provide examples.
-    
- There are several ways we can create functions - function declaration, function expression and arrow function expression.
-* function declaration
-```
-    function showMessage(param) {
-        return param*2;
-}
-```
-* function expression - We can assign a function to a value.
-```
-        let sayHi = function() {
-        alert( "Hello" );
-        };
-```
-The main difference between these two is that in function expressions we can use the function after its declaration. In contrast, function declarations go on top of the heap when executing the code and can be called anytime.
+## What data types are there in JavaScript? Provide examples for each type
 
-* arrow function expression, also called anonymous functions
-It represents a shorter version of a function expression. On the left side of the => we pass the parameters and then it evaluates the expression on the right with those parameters and returns it. 
+### Primitive value
+
+When we access a primitive value, we manipulate the actual value stored in that variable. And when we assign a value from one variable to another, it creates a new variable in the memeory.JavaScript stores the primitive value in the call stack (Execution context). 
 ```
-    let func = (arg1, arg2, ..., argN) => expression;
+let a = "hello";
+let b = a; 
+cosnole.log(b) //"hello"
 ```
+There are 7 primitive types of variables. 
+* string - It stores textual data. It is enclosed within single quotes, double quotes or backticks. 
+  Every string has a length and we can access every letter by it's index.
+```
+let name = "Stefina";
+let name = 'Stefina';
+let name = `Stefina`;
+
+``` 
+* number - In Js we have only one type for numbers for both integers and floating numbers.
+```
+let age = 5;
+``` 
+* boolean - Stores a variable that is only true or false.
+* undefined - It's a variable that is declared, but not initialized. 
+```
+let name;
+typeof name //-undefined Here we have a declaration of a variable, but we haven't set it to anything.
+```
+* null - It represents a nonexisting/invalid object value.
+```
+foo is known to exist now but it has no type or value:
+const foo = null;
+foo; //null
+```
+* symbol - Symbol is a primitive that's guaranteed to be unique. Symbols are often used to add unique property keys to an object that won't collide with keys any other code might add to the object, and which are hidden from any mechanisms other code will typically use to access the object.
+```
+const sym = Symbol('foo');
+``` 
+* BigInt - BigInt is a numeric data type that can represent integers in the arbitrary precision format.
+
+Variables can be classified as falsy or thuthy.<br>
+* falsy - 0,-0,0n,undefined, null, Nan, false,''.
+* truthy - string, number, array, object, true.
+* 
+### Reference Value
+
+Variables that are assigned a non-primitive value are given a reference to that value. That reference points to the object’s location in memory. The variables don’t actually contain the value.
+```
+var arr = [];
+arr.push(1);
+\\When we use arr to do something, such as pushing a value, the Javascript engine goes to the location of arr in memory and works with the information stored there.
+```
+
+When a reference type value, an object, is copied to another variable using =, the address of that value is what’s actually copied over.
+```
+var reference = [1];
+var refCopy = reference; 
+refCopy.push(2);
+console.log(reference) \\[1, 2]
+console.log(refCopy) \\ [1, 2]
+\\Each variable now contains a reference to the same array. That means that if we alter reference, refCopy will also;
+```
+
+JavaScript provides three types of Reference values that include *Array*, *Object*, and *Function*. 
