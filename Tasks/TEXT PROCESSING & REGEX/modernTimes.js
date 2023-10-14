@@ -1,3 +1,4 @@
+// find everyword with #
 function solve(text){
     let words = text.split(' ');
     for (let word of words) {

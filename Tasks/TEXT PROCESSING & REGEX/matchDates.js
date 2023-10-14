@@ -1,3 +1,4 @@
+// Write a program, which matches a date in the format "dd{separator}MMM{separator}yyyy".
 function matchDates (str) {
 
         let pattern = /\b(?<day>\d{2})([-.\/])(<?month>[A-Z][a-z]{2})\2(<?year>\d{4})\b/g ;

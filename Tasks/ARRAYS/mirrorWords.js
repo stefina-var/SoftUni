@@ -1,3 +1,4 @@
+//find mirror words in a sting
 function solve(string){
     let patern = /(?<sign>[@#])(?<wordOne>[A-Za-z]{3,})(?<middleSign>[@#]\1)(?<wordTwo>[A-Za-z]{3,})[#@]/g;
     let match = patern.exec(string); 

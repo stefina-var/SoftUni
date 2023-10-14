@@ -1,3 +1,4 @@
+// Write a function to extract all email addresses from a given text. 
 function solve(str){
     let regex = /(?<!\S)\w*(|\-|\.|\_|)\w*@\w+((\-|\.)\w+)*\.(\w+[\.]?\w+)*\b/g ;
     let match = regex.exec(str);

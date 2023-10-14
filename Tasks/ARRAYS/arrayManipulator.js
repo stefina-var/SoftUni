@@ -1,5 +1,5 @@
 function arrayManipulator(numbs, commands){
-    debugger;
+    
     for (let command of commands) {
         let tokens = command.split(" ");
         let curCommand = tokens[0];

@@ -1,5 +1,6 @@
+// Write a function, which takes the output from the previous task and turns it back into a string.
 function solve(input){
-    debugger;
+    
     let finalString = [];
     for (let line of input) {
         if(line=="end"){

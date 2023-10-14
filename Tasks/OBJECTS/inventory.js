@@ -1,6 +1,10 @@
+//In the era of heroes, every hero has his items that make him unique.
+//Create a function that creates a register for the heroes, with their names, level, and items, if they have such. 
+//The register should accept data in a specified format, and return it presented in a specified format. 
+
 function inventory(array){
 let heros = [];
-debugger;
+
 for (const element of array) {
     let info = element.split(' / ');
     let name= info[0];
