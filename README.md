@@ -1,6 +1,5 @@
 # Task from Softuni Js basic and Js fundamentals course
 ## Arrays 
-### itterating throug arrays
 Access and modify Elements
 Iterate Through Elements
 Add and remove Elements
